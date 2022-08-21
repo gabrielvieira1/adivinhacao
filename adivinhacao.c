@@ -2,19 +2,16 @@
 
 int main()
 {
-    int numero, chute, tentativas = 0;
-    printf("Digite um numero: ");
-    scanf("%d", &numero);
-    printf("Digite um numero: ");
+    printf("******************************************\n");
+    printf("* Bem vindo ao nosso jogo de adivinhação *\n");
+    printf("******************************************\n");
+
+    int numero_secreto = 42;
+    int chute;
+
+    printf("Qual é o seu chute?\n");
     scanf("%d", &chute);
-    while (chute != numero)
-    {
-        printf("Errou!\n");
-        printf("Digite um numero: ");
-        scanf("%d", &chute);
-        tentativas++;
-    }
-    printf("Acertou!\n");
-    printf("Numero de tentativas: %d\n", tentativas);
+    printf("O Seu chute foi %d\n", chute);
+
     return 0;
 }
